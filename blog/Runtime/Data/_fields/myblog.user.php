@@ -1,1 +1,0 @@
-<?php	return array ( 0 => 'user_id', 1 => 'username', 2 => 'passwd', 3 => 'regtime', 4 => 'lastlogin', '_autoinc' => true, '_pk' => 'user_id', '_type' => array ( 'user_id' => 'int(10) unsigned', 'username' => 'varchar(20)', 'passwd' => 'varchar(30)', 'regtime' => 'int(10) unsigned', 'lastlogin' => 'int(10) unsigned', ), );?>
