@@ -51,57 +51,7 @@
 			</div>
 		</div>
 	</div>
-<!-- <p>以下是测试练习</p>
-<table border="1" cellpadding="0" style="border-collapse:collapse;text-align:center;margin:0 auto;">
-	<tr>
-		<td>ID</td>
-		<td>username</td>
-		<td>regtime</td>
-		<td>regtime</td>
-		<td>操作</td>
-	</tr>
-	<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$vo): $mod = ($i % 2 );++$i;?><tr>
-			<td><?php echo ($vo["user_id"]); ?></td>
-			<td><?php echo ($vo["username"]); ?></td>
-			<td><?php echo ($vo["regtime"]); ?></td>
-			<td><?php echo ($vo["lastlogin"]); ?></td>
-			<td><span>删除|</span><span>修改</span></td>
-		</tr><?php endforeach; endif; else: echo "" ;endif; ?>
-</table>
-<p>以上是测试练习</p> -->
-	<div class="blog-container">
-		<div class="containerleft">
-			<div class="photomsgth0"></div>
-			<div class ="photomsg">
-				<div class="photomsgth1"><img src="__ROOT__/Uploads/img/article1.jpg"></div>
-				<div class="photomsgth2"><img src="__ROOT__/Uploads/img/article2.jpg"></div>
-			</div>
-			<div class="blogcontent">
-				<div class="content-thumb"><img src="__ROOT__/Uploads/img/testest.jpg" style="width:180px;height:140px;"></div>
-				<div class="content-body">
-					<h2><a href="">PHP 关联数组的十大使用技巧</a></h2>
-					<br />
-					<p>关联数组是 PHP 中使用最广泛的一种数据类型，PHP 内置多种操作关联数组的函数，对开发人员来说，要从中找出最有效，最合适自己所开发程序的方法来操纵这些数组。</p>
-					<div class="content-sub">分类|日期|全文|分享图标</div>
-				</div>
-			</div>
-			<div class="blogcontent">
-				<div class="content-thumb"><img src="__ROOT__/Uploads/img/testest.jpg" style="width:180px;height:140px;"></div>
-				<div class="content-body">
-					<h2><a href="">PHP 关联数组的十大使用技巧</a></h2>
-					<br />
-					<p>关联数组是 PHP 中使用最广泛的一种数据类型，PHP 内置多种操作关联数组的函数，对开发人员来说，要从中找出最有效，最合适自己所开发程序的方法来操纵这些数组。</p>
-					<div class="content-sub">分类|日期|全文|分享图标</div>
-				</div>
-			</div>
 
-		</div>
-		<div class="containerright">
-			<div class="rightbox"></div>
-			<div class="rightbox"></div>
-			<div class="rightbox"></div>
-		</div>
-	</div>
 	<div class="blog-footer">
 		<div class="blog-footer-top">About me| Contact me| Advertise | Contribute</div>
 		<div class="blog-footer-bottom">©Copyright 2015 青青子衿 保留所有权利  Power by Yuqing</div>
