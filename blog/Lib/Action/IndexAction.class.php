@@ -8,4 +8,24 @@ class IndexAction extends Action {
     	$this->assign('data',$arr);//这样可以在view页面动态的输出$data
     	$this->display();
     }
+
+    public function news(){
+    	$this->display();
+    }
+
+    public function frontTch(){
+    	$this->display();
+    }
+
+    public function phpTch(){
+		$this->display();
+	}
+
+    public function linux(){
+		$this->display();
+	}
+
+    public function github(){
+		$this->display();
+	}		
 }
