@@ -8,7 +8,7 @@ create table blog_user(
 	lastlogin int unsigned not null default 0
 ) engine myisam charset utf8;
 
-
+//blog table
 create table blog_content(
  `ID` bigint(20) unsigned NOT NULL AUTO_INCREMENT primary key,
  `post_title` text NOT NULL,
@@ -23,6 +23,17 @@ create table blog_content(
  `post_type` varchar(20) NOT NULL DEFAULT 'post',
  `post_comment` longtext NOT NULL,
  `comment_count` bigint(20) NOT NULL DEFAULT '0',
- `comment_status` varchar(20) NOT NULL DEFAULT 'open'
+ `comment_status` varchar(20) NOT NULL DEFAULT 'open',
+ `cat_id` smallint(6) NOT NULL DEFAULT '0',
+ `is_hot` tinyint(4) NOT NULL DEFAULT '0',
+ `is_new` tinyint(4) NOT NULL DEFAULT '0',
+  `is_top` tinyint(4) NOT NULL DEFAULT '0',
 ) engine myisam charset utf8;
 
+#栏目表
+create table blog_category (
+cat_id int auto_increment primary key,
+cat_name varchar(20) not null default'',
+intro varchar(100) not null default '',
+parent_id int not null default 0
+)engine myisam charset utf8;

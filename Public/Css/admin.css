@@ -6,7 +6,6 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 	height: 40px;
 	margin: 0 auto;
 	background: #23282D;
-	margin-bottom: 1px;
 }
 
 .admin-container{
@@ -24,6 +23,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 	height: 440px;
 	padding-left: 30px;
 	padding-top: 30px;
+	border-top: 1px solid #CCCCCC;
 }
 .admin-sidebar ul li a{
 	color: white;
