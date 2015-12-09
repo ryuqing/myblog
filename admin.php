@@ -5,7 +5,6 @@ define('APP_DEBUG',true);
 define('APP_NAME', 'Admin');//这边创建前台应用文件夹
 //2.确定应用路径 /很重要
 define('APP_PATH', './Admin/');
-
 //3.引用核心文件
 require('./ThinkPHP/ThinkPHP.php');
 
