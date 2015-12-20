@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>ECSHOP 管理中心 - 商品分类 </title>
+<meta name="robots" content="noindex, nofollow">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="../view/admin/styles/general.css" rel="stylesheet" type="text/css" />
+<link href="../view/admin/styles/main.css" rel="stylesheet" type="text/css" />
+<script type = 'text/javascript' src = '/app/view/js/jquery-1.4.2.min.js'></script>
+</head>
+<body>
+
+<h1>
+<span class="action-span"><a href="cateadd.php">添加分类</a></span>
+<span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
+<div style="clear:both"></div>
+</h1>
+<form method="post" action="" name="listForm">
+<div class="list-div" id="listDiv">
+
+<table width="400px" cellspacing="1" cellpadding="2" id="list-table" border="1">
+  <tr>
+    <th>ID</th>
+    <th>分类名称</th>
+    <th>导航栏</th>
+    <th>操作</th>
+  </tr>
+  <volist name="cate" id="c">
+    <tr align="center" class="0" id="0_1" id = 'tr_4'>
+    <td align="center" class="first-cell" style = 'padding-left="1"'>
+            <img src="" id="icon_0_1" width="9" height="9" border="0"/>
+            <span><a href="#" ><{$c.cat_id}></a></span>
+    </td>
+    <td width="10%"><{$c.cat_name}></td>
+    <td><span>0</span></td>
+    <td width="24%" align="center">
+      <a href="">编辑</a> |
+      <a href="__URL__/catedete.php?cate_id=<{$c.cat_id}>" onclick="if(!confirm('确实要删除吗？')){return false;};" title="移除">移除</a>
+    </td>
+  </tr> 
+  </volist>
+  </table>
+</div>
+</form>
+</body>
+</html>
