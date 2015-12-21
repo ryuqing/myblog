@@ -7,8 +7,9 @@
 </head>
 <body>
 <h1>
-<span class="action-span1"><a href="#">青青子衿 管理中心a</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span><span><a href="">添加分类</a></span>
+<span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
 <div style="clear:both"></div>
+<span><a href="cateadd" target="">添加分类</a></span>
 </h1>
 <form method="post" action="" name="listForm">
 <div class="list-div" id="listDiv">
@@ -28,7 +29,7 @@
     <td width="10%"><{$c.cat_name}></td>
     <td><span>0</span></td>
     <td width="24%" align="center">
-      <a href="__URL__/cateadd.php?cate_id=<{$c.cat_id}>">编辑</a> |
+      <a href="__URL__/cateupdate.php?cate_id=<{$c.cat_id}>">编辑</a> |
       <a href="__URL__/catedete.php?cate_id=<{$c.cat_id}>" onclick="if(!confirm('确实要删除吗？')){return false;};" title="移除">移除</a>
     </td>
   </tr> 
