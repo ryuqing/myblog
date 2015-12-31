@@ -10,9 +10,10 @@ class CateAction extends Action{
 
 	public function cateadd(){
     	$m = M('Category');
+        print_r($_POST);
     	$cate = $m->select();
     	$this->assign('cate',$cate);
-    	if($_POST['act']=="add"){
+    	if($_POST['actadd']=="add"){
 	    	$data['cat_name'] = $_POST['cat_name'];
 	    	$data['parent_id'] = $_POST['parent_id'];
 	    	$data['intro'] = $_POST['intro'];
@@ -38,19 +39,19 @@ class CateAction extends Action{
         $cate = $m->select();
         $this->assign('cate',$cate);
         $catethis = $m->find($_GET['cate_id']);
+        $this->assign('cateid',$catethis['cat_id']);
         $this->assign('catethis',$catethis);
-        if($_POST['act']=='update'){
+        if($_POST['actupdate']=='update'){
             $data['cat_id'] = $_POST['cate_id'];
             $data['cat_name'] = $_POST['cat_name'];
             $data['parent_id'] = $_POST['parent_id'];
             $data['intro'] = $_POST['intro'];
+            print_r($data);
             $count = $m->save($data);
-            var_dump($count);
             if($count){
                 $this->success('catelist');
             }else{
                 echo 'xiugaishibai';
-                $this->display();
             }
         }
         $this->display();

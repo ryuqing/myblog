@@ -6,7 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 </head>
 <frameset rows="40,*" border="0">
-	<frame src="top" scrolling="no"></frame>
+	<frame src="__URL__/top" scrolling="no"></frame>
 	<frameset cols="15%,*">
 		<frame src='__URL__/left' name='left' scrolling="no"/>
 		<frame src='__URL__/right' name='right' scrolling="no"/>

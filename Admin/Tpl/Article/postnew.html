@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh-CN">
+<head>
+<title>postnew</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Css/admin.css" rel="stylesheet" type="text/css"/>
+<script src="http://libs.baidu.com/jquery/1.9.0/jquery.js"></script>
+<style type="text/css">
+	html{
+		background: #fefefe;
+	}
+</style>
+</head> 
+<body>
+<div class="post-wrap">
+	<h1>撰写新文章</h1>
+	<form method="post" action="__URL__/postAdd">
+		<div id="titlediv">
+			<div id="titlewrap">
+				<label for="title" id="title-prompt-text" class="">标题:</label>
+				<input type="text" autocomplete="off" spellcheck="true" id="title" value="" size="30" name="post_title">
+			</div>
+			<select name="post_parent">
+				<option value="0">TEST</option>
+			</select>
+		</div>
+		<div id="post-container">
+			
+		</div>
+		<input type="submit" value="发布" />
+	</form>
+    <!-- 配置文件 -->
+    <script type="text/javascript" src="__ROOT__/ueditor/ueditor.config.js"></script>
+    <!-- 编辑器源码文件 -->
+    <script type="text/javascript" src="__ROOT__/ueditor/ueditor.all.js"></script>
+    <!-- 实例化编辑器 -->
+    <script type="text/javascript">
+        var ue = UE.getEditor('post-container',{
+        	initialFrameWidth:850,  //初始化编辑器宽度,默认1000
+        	initialFrameHeight:400,
+        	textarea:'editorValue',
+        	autoHeightEnabled:false
+        	});
+    </script>
+</div>
+</body>
+</html>
