@@ -1,6 +1,6 @@
 
 /*浏览器初始化CSS*/
-html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:none;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:none;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,button,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}small{font-size:100%;}body{font-family: Titillium Web;}a{text-decoration: none;}
+html{color:#000;background:#F9F9F9;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:none;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:none;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,button,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,button,textarea,select{*font-size:100%;}legend{color:#000;}del,ins{text-decoration:none;}small{font-size:100%;}body{font-family: Titillium Web;}a{text-decoration: none;}
 .admin-header{
 	height: 40px;
 	margin: 0 auto;
@@ -28,7 +28,14 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 .admin-sidebar ul li a{
 	color: white;
 }
-
+/*catelist*/
+.catelist-container{
+	margin: 20px;
+}
+.list-div .table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /*postnew*/
 .post-wrap	{
 	padding: 20px;
@@ -39,6 +46,36 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 }
 
 /*postlist*/
-#post-container{
+.post-container{
 	margin: 30px;
+}
+.post-container .post-header{
+	margin-bottom: 15px;
+}
+.post-container .post-header p{
+	font-size: 28px;
+	font-weight: bold;
+}
+.post-container .post-header a{
+	font-size: 20px;
+	font-weight: bold;
+	color: #0073AA;
+	display: inline;
+	padding-left: 15px;
+}
+
+.postlist-container .td-title{
+	width: 50%;
+}
+.postlist-container .td-author{
+	width: 15%;
+}
+.postlist-container .td-cate{
+	width: 15%;
+}
+.postlist-container .td-date{
+	width: 20%
+}
+.postlist-container .check{
+	padding: 5px;
 }

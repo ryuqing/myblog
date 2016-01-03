@@ -9,22 +9,26 @@
 </style>
 </head> 
 <body>
-<div id="post-container">
-        <div class="header"><p>POST</p><span>Add New</span></div>
+<div class="post-container">
+        <div class="post-header"><p>文章<a href="__URL__/postNew">写文章</a></p></div>
         <div class="postlist-container">
-        	<table border="1" cellspacing="1" cellpadding="2">
+        	<table border="1" cellpadding="2" width="865">
         		<tr>
-        			<th>title</th>
-        			<th>Author</th>
-        			<th>Category</th>
-        			<th>Date</th>
-        		</th>
-        		<tr>
-        			<td></td>
-        			<td></td>
-        			<td></td>
-        			<td></td>
+                    <th class="check"><input id="cb-select-54" name="post[]" value="54" type="checkbox"></th>
+        			<th class="td-title">title</th>
+        			<th class="td-author">Author</th>
+        			<th class="td-cate">Category</th>
+        			<th class="td-date">Date</th>
         		</tr>
+                <volist name="posts" id="c">
+            		<tr>
+                        <td class="check"><input id="" name="" value="" type="checkbox"></td>
+            			<td class="td-title"><a href="__URL__/postNew.php?id=<{$c.ID}>"><{$c.post_title}></a><p><a href="#">编辑</a>|<a href="">删除</a></p></td>
+            			<td class="td-author"><a href=""><{$c.post_author}></a></td>
+            			<td class="td-cate"><a href=""><{$c.cat_name}></a></td>
+            			<td class="td-date"><{$c.post_date }></td>
+            		</tr>
+                </volist>
         	</table>
         </div>
 </div>
