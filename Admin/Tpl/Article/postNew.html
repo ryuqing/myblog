@@ -21,12 +21,16 @@
 				<input type="text" autocomplete="off" spellcheck="true" id="title" value="" size="30" name="post_title">
 			</div>
 			<select name="post_parent">
-				<option value="0">TEST</option>
+			  <volist name="catelist" id="cate">
+				<option value="<{$cate.cat_id}>"><{$cate.cat_name}></option>
+			  </volist>
 			</select>
+			<input type="file" name="postimg"/>
 		</div>
 		<div id="post-container">
 			
 		</div>
+		<input type="hidden" name="addnew" value="addnew"/>
 		<input type="submit" value="发布" />
 	</form>
     <!-- 配置文件 -->

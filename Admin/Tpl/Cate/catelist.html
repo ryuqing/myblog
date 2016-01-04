@@ -4,17 +4,19 @@
 <title>青青子衿 管理中心 - 文章分类 </title>
 <meta name="robots" content="noindex, nofollow">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="__PUBLIC__/Css/admin.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+<div class="catelist-container">
 <h1>
-<span class="action-span1"><a href="#">ECSHOP 管理中心</a> </span><span id="search_id" class="action-span1"> - 商品分类 </span>
+<span class="action-span1"><a href="#">青青子衿 管理中心</a> </span><span id="search_id" class="action-span1"> - 文章分类 </span>
 <div style="clear:both"></div>
 <span><a href="cateadd" target="">添加分类</a></span>
 </h1>
 <form method="post" action="" name="listForm">
 <div class="list-div" id="listDiv">
-<table width="400px" cellspacing="1" cellpadding="2" id="list-table" border="1">
-  <tr>
+<table width="800px" cellspacing="0" border-collapse="collapse" id="list-table" border="1">
+  <tr align="center">
     <th>ID</th>
     <th>分类名称</th>
     <th>导航栏</th>
@@ -26,7 +28,7 @@
             <img src="" id="icon_0_1" width="9" height="9" border="0"/>
             <span><a href="#" ><{$c.cat_id}></a></span>
     </td>
-    <td width="10%"><{$c.cat_name}></td>
+    <td><{$c.cat_name}></td>
     <td><span>0</span></td>
     <td width="24%" align="center">
       <a href="__URL__/cateupdate.php?cate_id=<{$c.cat_id}>">编辑</a> |
@@ -37,5 +39,6 @@
   </table>
 </div>
 </form>
+</div>
 </body>
 </html>
