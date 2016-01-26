@@ -17,17 +17,17 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 .toplogo{
 	float: left;
 	width: 200px;
-	height: 70px;
-	background: #fcfcfc;
-	padding-top: 30px; 
+	height: 100px;
+	background: #f8f8f8 url("../img/logo.png") no-repeat scroll;
+	background-size: 100%;
 }
 .searchexbutton{
     float: left;	
 }
 .searchexbutton .header-search{
     width: 400px;
-    height: 40px;
-    background: transparent url("./img/dynaheader-search.png") no-repeat scroll;
+    height: 38px;
+    background: transparent url("../img/dynaheader-search.png") no-repeat scroll;
     border-width: 0px;
     padding-left: 20px;
     margin: 35px 0  0 80px;
@@ -36,17 +36,18 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 .searchexbutton .header-search-act{
 	cursor: pointer;
 	width: 70px;
-	background: transparent url("./img/dynaheader-search.png") no-repeat scroll -390px 0px;
+	background: transparent url("../img/dynaheader-search.png") no-repeat scroll -390px 0px;
 	border-width: 0px;
 	margin: 35px 150px 0 0;
 	float: right;
-	height: 40px;
+	height: 38px;
 
 }
 .blog-header-menu-container{
 	width: 100%;
 	height: 45px;
-	background:-moz-linear-gradient(top,#fcfcfc,#fbfbfb);
+	background:-moz-linear-gradient(top,#f8f8f8,#fbfbfb);
+	background: #f8f8f8;
 }
 .blog-header-menu{
 	width: 1000px;
@@ -99,7 +100,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 .photomsgth0{
 	width: 680px;
 	height: 380px;
-	background: #fcfcfc;
+	background: #f8f8f8;
 	display: none;
 }
 .photomsg{
@@ -112,14 +113,14 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 	width: 325px;
 	float: left;
 	height: 180px;
-	background: #fcfcfc;
+	background: #f8f8f8;
 	overflow:hidden;
 }
 .photomsgth2{
 	width: 325px;
 	height: 180px;
 	float: right;
-	background: #fcfcfc;
+	background: #f8f8f8;
 	overflow:hidden;
 }
 .photomsgth1:hover img, .photomsgth2:hover img{
@@ -141,7 +142,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 	height: 140px;
 	margin-right: 20px;
 	float: left;
-	background: #fcfcfc;
+	background: #f8f8f8;
 }
 .containerright{
 	width: 300px;
@@ -150,7 +151,7 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 }
 .rightbox{
 	width: 300px;
-	background: #fcfcfc;
+	background: #f8f8f8;
 	height: 200px;
 	margin-bottom: 10px;
 }
@@ -161,7 +162,8 @@ html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pr
 	clear: both;
 	width: 100%;
 	height: 100px;
-	background: #fcfcfc;
+	background: #f8f8f8;
+	padding-bottom: 20px;
 }
 .blog-footer-top{
 	padding-top: 20px;
